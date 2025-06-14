@@ -282,6 +282,13 @@ spec:
           {{- else if ne .Values.primary.resourcesPreset "none" }}
           resources: {{- include "common.resources.preset" (dict "type" .Values.primary.resourcesPreset) | nindent 12 }}
           {{- end }}
+           resources:
+            reuqests:
+              cpu: "500m"
+              memory: "512Mi"
+            limits:
+              cpu: "850m"
+              memory: "850Mi"
           volumeMounts:
             - name: data
               mountPath: /bitnami/mysql
