@@ -282,7 +282,7 @@ spec:
           {{- else if ne .Values.primary.resourcesPreset "none" }}
           resources: {{- include "common.resources.preset" (dict "type" .Values.primary.resourcesPreset) | nindent 12 }}
           {{- end }}
-           resources:
+          resources:
             reuqests:
               cpu: "500m"
               memory: "512Mi"
@@ -381,13 +381,6 @@ spec:
           {{- else if ne .Values.metrics.resourcesPreset "none" }}
           resources: {{- include "common.resources.preset" (dict "type" .Values.metrics.resourcesPreset) | nindent 12 }}
           {{- end }}
-          resources:
-            reuqests:
-              cpu: "50m"
-              memory: "50Mi"
-            limits:
-              cpu: "100m"
-              memory: "100Mi"
           volumeMounts:
           {{- if and .Values.auth.usePasswordFiles (not .Values.auth.customPasswordFiles) }}
             - name: mysql-credentials
