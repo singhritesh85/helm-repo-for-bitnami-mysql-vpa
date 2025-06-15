@@ -287,8 +287,8 @@ spec:
               cpu: "500m"
               memory: "512Mi"
             limits:
-              cpu: "850m"
-              memory: "850Mi"
+              cpu: "650m"
+              memory: "650Mi"
           volumeMounts:
             - name: data
               mountPath: /bitnami/mysql
