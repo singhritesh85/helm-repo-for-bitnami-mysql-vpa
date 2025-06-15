@@ -284,11 +284,11 @@ spec:
           {{- end }}
           resources:
             reuqests:
-              cpu: "250m"
-              memory: "256Mi"
+              cpu: "500m"
+              memory: "512Mi"
             limits:
-              cpu: "400m"
-              memory: "400Mi"
+              cpu: "650m"
+              memory: "650Mi"
           volumeMounts:
             - name: data
               mountPath: /bitnami/mysql
