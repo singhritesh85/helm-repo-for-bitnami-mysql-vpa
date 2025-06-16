@@ -293,7 +293,7 @@ spec:
           - resourceName: cpu
             restartPolicy: NotRequired  # Or RestartContainer
           - resourceName: memory
-          restartPolicy: NotRequired   # Or NotRequired
+            restartPolicy: NotRequired   # Or NotRequired
           volumeMounts:
             - name: data
               mountPath: /bitnami/mysql
