@@ -89,7 +89,7 @@ diagnosticMode:
 ##
 image:
   registry: docker.io
-  repository: bitnami/mysql
+  repository: bitnamilegacy/mysql   ###bitnami/mysql
   tag: 8.4.0-debian-12-r3
   digest: ""
   ## Specify a imagePullPolicy
